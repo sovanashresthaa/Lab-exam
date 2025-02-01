@@ -10,6 +10,6 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-    screen.fill('white')
+    screen.fill('BLACK')
     #call the function here
     pygame.display.flip()
