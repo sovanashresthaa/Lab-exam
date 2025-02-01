@@ -9,7 +9,7 @@ def draw_line_DDA(x1, y1, x2, y2):
     x_inc, y_inc = dx / steps, dy / steps
     x, y = x1, y1
     for _ in range(steps + 1):
-        screen.set_at((round(x), round(y)), 'black')
+        screen.set_at((round(x), round(y)), 'white')
         x, y = x + x_inc, y + y_inc
 
 while True:
@@ -17,6 +17,6 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-    screen.fill('white')
+    screen.fill('black')
     draw_line_DDA(200, 50, 400, 300)
     pygame.display.flip()
